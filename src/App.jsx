@@ -1,8 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
-import "./app.css";
-import lupa from "./assets/loupe.png";
-import { use } from "react";
+import "./css/app.css";
+import "./css/resposividade.css"
+
+
 
 function App() {
   const [domain, setDomain] = useState();
@@ -47,11 +48,12 @@ function App() {
   return (
     <>
       <header>
-        <h1 className="logo">Registro.Web</h1>
+        <h1 className="logo">Domínio.Br</h1>
       </header>
 
       <main>
         <section className="containerSearch">
+        <span>Verifique a disponibilidade de um domínio .br de forma fácil e rápida.</span>
           <div className="containerInputs">
             <input
               type="text"
@@ -73,7 +75,7 @@ function App() {
         {domainData && (
           <section className="containerInfDomain">
             <div className="containerStatus">
-              <p className="pDomian">{domainData.fqdn}</p>
+              <p className="pDomain">{domainData.fqdn}</p>
               <p className="pStatus">
                 Dominío
                 <span style={{ color: colorStatus }}>

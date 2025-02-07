@@ -1,0 +1,28 @@
+@media (max-width: 800px) {
+    body{
+        background-size: cover;
+        background-position: top;
+    }
+  .logo {
+    font-size: 1.8em;
+  }
+  .containerSearch > span{
+    font-size: 1.2em;
+  }
+  .containerSearch{
+    width: 95%;
+  }
+  .inputDomain{
+    font-size: 1em;
+  }
+  .containerInfDomain{
+    width: 100%;
+  }
+  .pDomain{
+    font-size: 1.2em;
+  }
+  .suggestions{
+    overflow: hidden;
+    height: 100%;
+  }
+}
